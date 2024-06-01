@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  proyec-micro:
+    container_name: proyec-micro
+    image: proyec-micro:v1
+    build:
+      context: .
+    ports:
+      - "4002:4002"
+    networks:
+      - proyectos-app
+
+networks:
+  proyectos-app:
